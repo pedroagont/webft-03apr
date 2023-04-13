@@ -23,4 +23,5 @@ getRandomNumberPromise()
     return randomNumTimesTwo + 5;
   })
   .then((randomNumTimesTwoPlus5) => randomNumTimesTwoPlus5)
+  .then(() => console.log('Promise finished!'))
   .catch((err) => console.log(err));
